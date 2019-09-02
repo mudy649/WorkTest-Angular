@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>ADD NEW ARTICLE</h1>
+<div>
+        <form class="example-form">
+                
+                    <div>
+                    <mat-form-field class="example-full-width">
+                    <input matInput type="text"  [(ngModel)]="data.name" [ngModelOptions]="{standalone: true}">
+                    </mat-form-field>
+                    </div>
+                    <div>
+                    <span><button mat-button [mat-dialog-close]="data.name" cdkFocusInitial>Save</button></span>
+                    <span><button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button></span>
+                    </div>
+           
+        </form>
+</div>

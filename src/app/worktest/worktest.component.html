@@ -1,0 +1,26 @@
+<div class= "toolbar-section">
+    <mat-toolbar  class="toolbar "color="primary">
+        <span><button mat-raised-button (click)="openDialog()">+</button></span>
+        <span class="example-fill-remaining-space">Article Application</span>
+    </mat-toolbar>
+</div>
+
+<div class= "tab-section">
+                <mat-tab-group dynamicHeight>
+                    <mat-tab label="Articles">
+                        <div class="example-small-box mat-elevation-z4">
+                                <div class= "list-article">
+                                        <mat-list> 
+                                        <mat-list-item >  
+                                        <p><i>{{name}}</i></p>
+                                        </mat-list-item> 
+                                        </mat-list>
+                                </div>
+                        </div>
+                        
+                    </mat-tab>
+                     <mat-tab label="Article Details">
+                         <div class="example-large-box mat-elevation-z4">Details of Article</div>
+                     </mat-tab>
+                </mat-tab-group>
+</div>
