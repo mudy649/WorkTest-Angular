@@ -3,11 +3,16 @@
         <form class="example-form">
                 
                     <div>
-                    <mat-form-field class="example-full-width">
+                            <mat-form-field *ngIf="action != 'Delete'; else elseTemplate">
+                                    <input placeholder="{{action}} Name" matInput [(ngModel)]="local_data.name" [ngModelOptions]="{standalone: true}">
+                                  </mat-form-field>
+                    
+                    <!-- <mat-form-field class="example-full-width">
                     <input matInput type="text"  [(ngModel)]="data.name" [ngModelOptions]="{standalone: true}">
-                    </mat-form-field>
+                    </mat-form-field> -->
                     </div>
                     <div>
+                    <span><button mat-button (click)="doAction()">{{action}}</button></span>   
                     <span><button mat-button [mat-dialog-close]="data.name" cdkFocusInitial>Save</button></span>
                     <span><button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button></span>
                     </div>

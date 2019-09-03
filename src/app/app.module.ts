@@ -14,6 +14,9 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
 import {MatInputModule} from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
+import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatTableModule} from '@angular/material/table';
+
 // THIS IS FOR BINDING WITH DIALOG INPUT AND ARTICLE LIST
 import {FormsModule} from '@angular/forms'
 
@@ -40,7 +43,8 @@ import {FormsModule} from '@angular/forms'
     MatInputModule,
     MatGridListModule,
     MatListModule,
-
+    MatFormFieldModule,
+    MatTableModule,
     FormsModule
 
   ],
@@ -53,6 +57,8 @@ import {FormsModule} from '@angular/forms'
     MatInputModule,
     MatGridListModule,
     MatListModule,
+    MatFormFieldModule,
+    MatTableModule
   ],
 
   providers: [],

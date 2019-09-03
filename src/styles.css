@@ -6,3 +6,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .example-fill-remaining-space{
     margin: 0 auto;
     }
+.list-name{
+    
+    padding-top: 1%;
+    
+}
+.article-list{
+    width: 100%;
+}
+.my-table{
+    width: 50%;
+    min-width: 300px;
+    
+}
